@@ -1,0 +1,32 @@
+ANVÄNDARFALL
+
+
+
+1. Fylla i ruta
+
+        EXPR: Rutan man markerar ska highlightas. Användaren skriver in ett godtyckligt expr. När användaren byter ruta eller trycker enter visas uttrycket i den gammla rutan (om uttrycket var rätt)och uttrycket visas utan onödiga paranteser. Är det beroende av fler rutor ska det uppdateras värdet i realtid. Om man skriver ett felaktigt expr(ex skickar med en tom ruta, dela med 0 eller refererar till sig själv) får man ett IOexception (händer i exprParser) och programmet skriver ut ett felmeddelande i statusfältet.
+
+        STRING: Rutan man markerar ska highlightas. Användaren skriver "#" innan strängen i editorn. Fyrkanten visas inte i rutan. Uttrycket dycker upp i rutan givet det inte var något fel då användaren trycker enter eller byter ruta.
+
+
+
+3. NEW/PRINT/SAVE/OPEN/CLOSE
+
+        Användaren trycker på File och får välja mellan alternativen ovan.
+
+        New: Creates a new XL frame. The title of the frame is Untitled- followed by a running number. Each new frame has its own menu bar, current slot indicator etc.
+
+        Print: A print dialog opens and the current spread sheet can be printed.
+
+        Save: A file dialog opens and the contents of the current spread sheet may be saved.
+
+        Open: A file dialog opens and the contents of the current contents may be replaced by the file contents.
+
+        Close: The current XL window is closed and all information contained i the spread sheet is lost. Closing the the last window will terminate the program.
+
+
+
+4. Ta bort rutor
+
+        Ruta man markerar ska highlightas. I editorn kan man sedan välja att ta bort innehållet i rutan. Om det finns en referens till denna ruta i någon annan skrivs ett felmeddelande ut i statusfältet.
+
